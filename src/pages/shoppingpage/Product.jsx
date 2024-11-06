@@ -14,7 +14,7 @@ const Product = () => {
   };
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/products')
+    fetch('https://nike-be.onrender.com/api/products')
       .then((res) => res.json())
       .then((data) => {
         setData(data);

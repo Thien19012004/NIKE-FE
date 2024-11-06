@@ -7,7 +7,7 @@ const ShoppingDetails = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/api/products/${id}`) // Thay đổi endpoint để lấy thông tin sản phẩm theo ID
+        fetch(`https://nike-be.onrender.com/api/products/${id}`) // Thay đổi endpoint để lấy thông tin sản phẩm theo ID
             .then(res => res.json())
             .then(data => {
                 setProduct(data);
